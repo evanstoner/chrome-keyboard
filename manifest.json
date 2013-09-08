@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Virtual keyboard",
+  "description": "A user-programmable virtual keyboard for Google Chrome.",
+  "version": "1.0",
+  
+  "permissions": ["tabs", "activeTab", "<all_urls>"],
+
+  "browser_action": {
+    "default_icon": "img/Keyboard-32.png",
+    "default_popup": "popup.html"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/jquery-2.0.3.min.js", "js/content_script.js"]
+    }
+  ],
+  
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+K"
+      }
+    }
+  }
+}
