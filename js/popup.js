@@ -27,7 +27,7 @@ function keydown(e) {
   if (!text) {
     return;
   }
-  $("#" + text).addClass("key-active");
+  $("#" + keys[e.which]).addClass("key-active");
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.sendMessage(tabs[0].id, {type: "add", text: text}, function(response) {
       console.log(response);
