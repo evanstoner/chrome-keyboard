@@ -1,15 +1,50 @@
 <!doctype html>
 <html>
   <head>
-    <title>Getting Started Extension's Popup</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <title>chrome-keyboard</title>
     <link href="css/style.css" rel="stylesheet" media="screen">
     <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/popup.js"></script>
   </head>
   <body>
-    <input type="text" id="textbox" name="textbox" value="" placeholder="Hit a key" />
-    <div id="snippets"></div>
+    <div class="key-row key-row-1">
+      <div id="Q" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="W" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="E" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="R" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="T" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="Y" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="U" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="I" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="O" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="P" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div class="clear"></div>
+    </div>
+    <div class="key-row key-row-2">
+      <div id="A" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="S" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="D" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="F" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="G" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="H" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="J" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="K" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="L" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div class="clear"></div>
+    </div>
+    <div class="key-row key-row-3">
+      <div id="Z" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="X" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="C" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="V" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="B" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="N" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div id="M" class="key"><div class="letter"></div><div class="snippet"></div></div>
+      <div class="clear"></div>
+    </div>
+    <input id="letter" type="text" maxlength="1">
+    <input type="text" id="snippet">
+    <button id="setSnippet">Set</button>
   </body>
 </html>
 
