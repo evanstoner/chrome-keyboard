@@ -1,4 +1,6 @@
-chrome-keyboard
-===============
+Chrome Keyboard (chrome-keyboard)
+=================================
 
-A user-programmable virtual keyboard for Google Chrome
+A virtual user-programmable keyboard for Google Chrome.
+
+A Java application succeeds Chrome Keyboard. See http://github.com/evanstoner/upk
